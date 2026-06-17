@@ -117,15 +117,18 @@ export default function Navbar() {
           ))}
 
           {/* Schedule a Call */}
-          <button
+          <a
+            href="https://calendar.app.google/5iyVDYJBkr1yWbTX7"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn"
-            onClick={() => { navigate('/contact'); window.scrollTo({ top: 0 }) }}
             style={{
               background: '#ffffff',
               color: '#111111',
               padding: '12px 24px',
               lineHeight: 1,
               transition: 'background 0.2s, color 0.2s',
+              textDecoration: 'none',
             }}
             onMouseEnter={e => {
               e.currentTarget.style.background = '#C41414'
@@ -137,7 +140,7 @@ export default function Navbar() {
             }}
           >
             Schedule a Call
-          </button>
+          </a>
         </nav>}
 
         {/* ─── Mobile hamburger ──────────────────────────── */}
